@@ -1,0 +1,33 @@
+{
+    "name": "sql-session-store",
+    "main": "dist/index.js",
+    "version": "0.0.1",
+    "description": "Middleware to handle sessions for wesbervers using SQL databases",
+    "scripts": {
+        "build": "tsc",
+        "prepublish": "npm run build",
+        "test": "mocha tests/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DeathHound6/sql-session-store.git"
+    },
+    "author": {
+        "name": "DeathHound6",
+        "email": "acraig176@hotmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/DeathHound6/sql-session-store/issues"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "mariadb": "^3.0.0"
+    },
+    "devDependencies": {
+        "@types/express-session": "^1.17.4",
+        "@types/node": "^17.0.33",
+        "express-session": "^1.17.3",
+        "mocha": "^10.0.0",
+        "typescript": "^4.6.4"
+    }
+}
